@@ -1,0 +1,15 @@
+/* common part  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* font family for whole project  */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.error{
+    display: none;
+}

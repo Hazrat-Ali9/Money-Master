@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money-Master</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- fav icon  -->
+    <link rel="shortcut icon" href="images/doller.jpg" type="image/x-icon">
+    <!-- css link bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom style css -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    
+
+        <!-- header part start  -->
+       
+        <header class="bg-light">
+                
+            <h1 class="header-text text-center  mt-4 fw-bold text-muted">Hazrat Ali <span class="text-primary">Money</span></h1>
+                
+        </header>
+
+        <!-- header part end -->
+
+        <main>
+        <section>
+
+        <div class="container mt-5">
+            <div class="row gx-5">
+
+                <!-- leftside image part -->
+
+                <div class="col-lg-6 col-sm-12 ">
+                    <img class="img-fluid"  src="images/leftside.jpg" alt="">
+                </div>
+
+                  <!-- rightside calculate part -->
+
+                  <div class="col-lg-6 col-sm-12 bg-light">
+                    
+                <!-- income part -->
+
+                <div> 
+                    <!-- income heading and incom input  -->
+                    <h2 class="text-center mt-5 ">Income</h2>
+                    <p class="text-center fs-5 ">Income : <input id="input-income" type="text"></p>
+
+                    <!-- incom error text  -->
+                    <p class="text-center text-danger error" id="input-income-error">Please enter your a Positive Number</p>
+                    <p class="text-center text-danger error" id="input-income-fillup">Please Fillup </p>
+                </div>
+
+
+                <!-- Expenses part -->
+
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                    
+                    <div>
+
+                        <h2 class="text-center mt-5 ">Expenses</h2>
+
+                    <div>
+                        <!-- food input  -->
+                        <p class="text-start fs-5 ">Food : <input id="food-input"   type="text"></p>
+
+                        <!-- food error text  -->
+                        <p class="text-center text-danger error" id="food-input-error">Please enter your a Positive Number</p>
+                        <p class="text-center text-danger error" id="food-input-fillup">Please Fillup </p>
+
+                        <!-- rent input  -->
+                        <p class="text-start fs-5 ">Rent : <input id="rent-input" class="ms-2"   type="text"></p>
+
+                        <!-- rent error text  -->
+                        <p class="text-center text-danger error" id="rent-input-error">Please enter your a Positive Number</p>
+                        <p class="text-center text-danger error" id="rent-input-fillup">Please Fillup </p>
+
+                        <!-- cloth input  -->
+                        <p class="text-start fs-5 ">Cloth : <input id="cloth-input" type="text"></p>
+
+                        <!-- cloth error text  -->
+                        <p class="text-center text-danger error" id="cloth-input-error">Please enter your a Positive Number</p>
+                        <p class="text-center text-danger error" id="cloth-input-fillup">Please Fillup </p>
+
+                    </div>
+
+                        <!-- calculate button  -->
+                        <button id="calculate-total" type="button" class="btn btn-primary px-5 fs-5 text-center mt-3">Calculate</button>
+                        
+                        <!-- clear button  -->
+                        <button id="clear-expenses" type="button" class="btn btn-danger ms-4 mt-3 px-4 fs-5 ">Clear</button>
+
+                    </div>
+                </div>
+                   
+                <!-- Total Expenses text And Balance text   -->
+
+                <h3 class="text-center mt-5 ">Total Expenses : <span id="total-expenses">00</span> </h3>
+                <h3 class="text-center mt-3 ">Balance : <span id="input-balance">00</span> </h3>
+               
+                <!-- Savings Part    -->
+
+                <!-- save input field and button  -->
+                <p class=" text-center fs-5 mt-3">Save : <input id="save-input" class="w-25" type="text"> <span class="mx-2">%</span><button id="calculate-saving" type="button" class="btn btn-success mx-3 px-5">Save</button></p>
+
+               
+ 
+                <div class="text-center">
+
+                    <!-- savings error text  -->
+                    <p class="text-center text-danger error" id="save-input-error">Please enter a Positive Number</p>
+                    <p class="text-center text-danger error" id="save-input-fillup">Please Fillup </p>
+
+                    <!-- saving amount text and remaining-balance text  -->
+                    <h5>Saving Amount : <span id="saving-amount">00</span> </h5>
+                    <h5>Remaining Balance : <span id="remaining-balance">00</span> </h5>
+
+                </div>
+              </div> 
+             </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer part start  -->
+
+    <footer class="bg-dark mt-5 py-4">
+        <div class="container">
+            <p class="text-center text-white fs-5"> Copyright @ 2023-All Right Reserved By Hazrat Ali</p>
+        </div>
+    </footer>
+    <!-- footer part end  -->
+
+
+
+    
+    <!-- js of bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js  -->
+    <script src="js/custom.js"></script>
+    
+</body>
+</html>
