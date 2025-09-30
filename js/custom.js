@@ -83,52 +83,52 @@ document.getElementById('clear-expenses').addEventListener('click',function(){
 
 
 
-// save button added and calculation 
+// // save button added and calculation 
 
-    document.getElementById('calculate-saving').addEventListener('click',function(){
+//     document.getElementById('calculate-saving').addEventListener('click',function(){
 
-    // call the function
-    const inputIncomeAmount = getInput('input-income');
-
-
-    // input field of savings Amount
-    const inputSaveAmount= getInput('save-input');
-
-    
-    // savings Amount calculation 
-    const savingCalculation = (inputIncomeAmount * inputSaveAmount) / 100;
-    
-    // declare savings ammount
-    const savingAmount = document.getElementById('saving-amount');
-    const savingAmountInnerText = savingAmount.innerText;
-    const savingAmountParse = parseFloat(savingAmountInnerText);
-    
+//     // call the function
+//     const inputIncomeAmount = getInput('input-income');
 
 
-    // total balance calculation again to see the remainingBalance
-    const inputBalance = document.getElementById('input-balance');
-    const inputBalanceInnerText = inputBalance.innerText;
-    const inputBalanceAmountParse = parseFloat(inputBalanceInnerText);
+//     // input field of savings Amount
+//     const inputSaveAmount= getInput('save-input');
 
     
-    // remainingBalance calculation 
-    const remainingBalanceCalculation = inputBalanceAmountParse - savingCalculation;
+//     // savings Amount calculation 
+//     const savingCalculation = (inputIncomeAmount * inputSaveAmount) / 100;
+    
+//     // declare savings ammount
+//     const savingAmount = document.getElementById('saving-amount');
+//     const savingAmountInnerText = savingAmount.innerText;
+//     const savingAmountParse = parseFloat(savingAmountInnerText);
+    
+
+
+//     // total balance calculation again to see the remainingBalance
+//     const inputBalance = document.getElementById('input-balance');
+//     const inputBalanceInnerText = inputBalance.innerText;
+//     const inputBalanceAmountParse = parseFloat(inputBalanceInnerText);
+
+    
+//     // remainingBalance calculation 
+//     const remainingBalanceCalculation = inputBalanceAmountParse - savingCalculation;
 
    
-    // declare remaining balance 
-    const remainingBalance = document.getElementById('remaining-balance');
-    const remainingBalanceInnerText = remainingBalance.innerText;
+//     // declare remaining balance 
+//     const remainingBalance = document.getElementById('remaining-balance');
+//     const remainingBalanceInnerText = remainingBalance.innerText;
     
-    // error 
+//     // error 
 
-    if(isNaN(savingCalculation)==false ){
-        savingAmount.innerText = savingCalculation;
-        remainingBalance.innerText = remainingBalanceCalculation;
-    }
-    else{
-        savingAmount.innerText = '00';
-        remainingBalance.innerText = '00';
-    }
+//     if(isNaN(savingCalculation)==false ){
+//         savingAmount.innerText = savingCalculation;
+//         remainingBalance.innerText = remainingBalanceCalculation;
+//     }
+//     else{
+//         savingAmount.innerText = '00';
+//         remainingBalance.innerText = '00';
+//     }
     
-});
+// });
 
