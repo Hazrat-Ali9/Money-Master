@@ -27,7 +27,7 @@ function getInput(inputId){
 }
 
 
-// calculate button and calculation 
+// Calculate Button and Calculation 
 
 document.getElementById('calculate-total').addEventListener('click',function(){
 
